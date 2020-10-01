@@ -1,0 +1,1010 @@
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="CthunFrame.lua" />
+	<Frame name="CthunFrame" parent="UIParent" movable="true" enableMouse="true" enableMouseMotion="true">
+		<Size x="768" y="768" />
+		<Anchors>
+			<Anchor point="TOPLEFT" x="271" y="-164" />
+		</Anchors>
+		<Backdrop bgFile="" edgeFile="" tile="true">
+			<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11" />
+			</BackgroundInsets>
+			<TileSize val="32" />
+			<EdgeSize val="32" />
+		</Backdrop>
+		<Frames>
+			<Frame name="AngledFrame" parent="CthunFrame">
+				<Size x="768" y="768" />
+				<Anchors>
+					<Anchor point="CENTER" x="1" y="1" />
+				</Anchors>
+				<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\CthunAngle.tga" edgeFile="">
+					<BackgroundInsets>
+						<AbsInset left="12" right="12" top="12" bottom="12" />
+					</BackgroundInsets>
+					<TileSize>
+						<AbsValue val="32" />
+					</TileSize>
+					<EdgeSize>
+						<AbsValue val="32" />
+					</EdgeSize>
+				</Backdrop>
+				<Layers>
+					<Layer level="OVERLAY">
+						<FontString name="Angled_GongString" inherits="GameFontNormalHuge2" font="Fonts\2002.ttf" text="GONG">
+							<Size x="86" y="23" />
+							<Anchors>
+								<Anchor point="TOPLEFT" x="310" y="-144" />
+							</Anchors>
+							<FontHeight val="25" />
+							<Color r="1" g="1" b="1" />
+						</FontString>
+						<FontString name="Angled_StairString" inherits="GameFontNormalHuge2" font="Fonts\2002.ttf" text="STAIRS">
+							<Size x="94" y="23" />
+							<Anchors>
+								<Anchor point="TOPLEFT" x="440" y="-547" />
+							</Anchors>
+							<FontHeight val="25" />
+							<Color r="1" g="1" b="1" />
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Frame name="Angled_Group1_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="21" y="170" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group1_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-41" y="149" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group1_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-3" y="201" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group1_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-42" y="188" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group1_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-1" y="129" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group2_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="70" y="124" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group2_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="114" y="138" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group2_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="56" y="166" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group3_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-67" y="124" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group4_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="136" y="111" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group4_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="176" y="111" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group6_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="112" y="1" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group4_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="189" y="73" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group3_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-94" y="66" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group6_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="182" y="-12" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group6_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="153" y="16" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group6_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="165" y="-47" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group5_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-116" y="-29" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group5_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-129" y="8" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group5_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-97" y="30" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group5_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-56" y="10" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group3_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-52" y="82" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group5_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-76" y="-29" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group8_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="100" y="-105" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group8_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="62" y="-118" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group8_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="99" y="-65" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group8_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="39" y="-86" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group7_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-10" y="-41" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group7_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="4" y="-82" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group6_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="125" y="-41" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group3_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-106" y="131" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group3_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-124" y="95" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group7_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-59" y="-94" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group7_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-24" y="-112" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group4_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="117" y="72" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group4_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="156" y="50" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group8_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="60" y="-46" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group2_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="85" y="195" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group2_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="120" y="177" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Angled_Group7_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-52" y="-54" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+				</Frames>
+			</Frame>
+			<Frame name="VerticalFrame" parent="CthunFrame">
+				<Size x="768" y="768" />
+				<Anchors>
+					<Anchor point="CENTER" x="1" y="1" />
+				</Anchors>
+				<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\CthunVert.tga" edgeFile="">
+					<BackgroundInsets>
+						<AbsInset left="12" right="12" top="12" bottom="12" />
+					</BackgroundInsets>
+					<TileSize>
+						<AbsValue val="32" />
+					</TileSize>
+					<EdgeSize>
+						<AbsValue val="32" />
+					</EdgeSize>
+				</Backdrop>
+				<Layers>
+					<Layer level="OVERLAY">
+						<FontString name="GongString" inherits="GameFontNormalHuge2" font="Fonts\2002.ttf" text="GONG">
+							<Size x="86" y="23" />
+							<Anchors>
+								<Anchor point="TOPLEFT" x="341" y="-144" />
+							</Anchors>
+							<FontHeight val="25" />
+							<Color r="1" g="1" b="1" />
+						</FontString>
+						<FontString name="StairString" inherits="GameFontNormalHuge2" font="Fonts\2002.ttf" text="STAIRS">
+							<Size x="94" y="23" />
+							<Anchors>
+								<Anchor point="TOPLEFT" x="332" y="-567" />
+							</Anchors>
+							<FontHeight val="25" />
+							<Color r="1" g="1" b="1" />
+						</FontString>
+					</Layer>
+				</Layers>
+				<Frames>
+					<Frame name="Group1_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="33" y="159" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group1_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-31" y="159" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group1_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="20" y="197" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group1_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-19" y="198" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group1_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="0" y="128" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group2_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="66" y="101" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group2_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="110" y="100" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group2_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="64" y="145" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group3_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-64" y="146" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group4_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="125" y="67" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group4_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="162" y="55" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group6_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="67" y="-29" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group4_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="163" y="15" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group3_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-110" y="99" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group6_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="129" y="-63" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group6_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="110" y="-29" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group6_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="102" y="-92" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group5_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-160" y="14" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group5_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-161" y="55" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group5_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-124" y="66" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group5_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-91" y="33" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group3_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-64" y="99" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group5_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-124" y="3" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group8_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="21" y="-128" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group8_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-20" y="-128" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group8_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="33" y="-88" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group8_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-31" y="-90" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group7_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-64" y="-31" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group7_SlotB" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-62" y="-75" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group6_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="66" y="-74" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group3_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-100" y="164" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group3_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-128" y="135" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group7_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-127" y="-66" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group7_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-98" y="-94" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group4_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="93" y="36" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group4_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="124" y="3" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group8_SlotA" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="2" y="-59" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group2_SlotD" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="102" y="164" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group2_SlotE" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="129" y="137" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+					<Frame name="Group7_SlotC" flattenRenderLayers="true">
+						<Size x="20" y="20" />
+						<Anchors>
+							<Anchor point="CENTER" x="-108" y="-30" />
+						</Anchors>
+						<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Unassigned.tga" edgeFile="">
+							<BackgroundInsets>
+								<AbsInset left="0" right="0" top="0" bottom="0" />
+							</BackgroundInsets>
+						</Backdrop>
+					</Frame>
+				</Frames>
+			</Frame>
+			<Slider name="AlphaSlider" inherits="OptionsSliderTemplate" minValue="5" maxValue="100" defaultValue="100" obeyStepOnDrag="true">
+				<Size x="135" y="15" />
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT" x="-100" y="50" />
+				</Anchors>
+			</Slider>
+			<Button name="HideBtn" toplevel="true" text="X">
+				<Size x="25" y="25" />
+				<Anchors>
+					<Anchor point="TOPLEFT" x="655" y="-24" />
+				</Anchors>
+				<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Close.tga" />
+			</Button>
+			<Button name="RotateBtn" toplevel="true" text="X">
+				<Size x="25" y="25" />
+				<Anchors>
+					<Anchor point="TOPLEFT" x="625" y="-24" />
+				</Anchors>
+				<Backdrop bgFile="Interface\AddOns\CthunForIdiots\Images\Rotate.tga" />
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				init_cthun();
+				self:RegisterForDrag("LeftButton");
+			</OnLoad>
+			<OnDragStart>
+				if not self.isLocked then
+					self:StartMoving();
+				end
+			</OnDragStart>
+			<OnDragStop>
+				self:StopMovingOrSizing();
+			</OnDragStop>
+		</Scripts>
+	</Frame>
+</Ui>

@@ -1,0 +1,7 @@
+## Title: CthunForIdiots
+## Version: 1.0.2
+## Author: Sweepy
+## Interface: 80205
+## SavedVariablesPerCharacter: Idiot_Orientation Idiot_Labels Idiot_Scale
+
+CthunFrame.xml
